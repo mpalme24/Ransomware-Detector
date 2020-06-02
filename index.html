@@ -157,12 +157,14 @@
 
             <div class="contact-section">
                 <div class="inner-width">
-                    <h1>Contact Developers</h1>
-                    <input type="text" class="name" placeholder="Your Name">
-                    <input type="text" class="email" placeholder="Your Email">
-                    <textarea rows="1" placeholder="Message..." class="message"></textarea>
-                    <button>Contact Us</button>
-                </div>
+                        <form id="contact-form" method="POST" action="contact-form-handler.php">
+                            <h1>Contact Developers</h1>
+                            <input type="text" name="name" class="name" placeholder="Your Name">
+                            <input type="text" name="email" class="email" placeholder="Your Email">
+                            <textarea name="message" rows="1" placeholder="Message..." class="message"></textarea>
+                            <input type="submit" class="submit" value="SEND MESSAGE">
+                        </form>
+            </div>
             </div>
            
 

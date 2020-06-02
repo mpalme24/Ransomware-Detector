@@ -762,7 +762,7 @@ section p {
 	max-width: 100%;
 }
 
-.contact-section button {
+.contact-section .submit {
 	background: none;
 	color: black;
 	border: 1px solid crimson;
@@ -774,7 +774,7 @@ section p {
 	cursor: pointer;
 }
 
-.contact-section button:hover {
+.contact-section .submit:hover {
 	background: #70a1ff;
 	color: #fff;
 }
