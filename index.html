@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ransomware Detector</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/5f5dd1fce1.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        
+       <!-- particles.js container -->
+        <div id="particles-js"></div>
+
+        <!-- scripts -->
+        <script src="scripts/particles.js"></script>
+        <script src="scripts/app.js"></script>
+
+            <div class="menu-toggle" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="overlay"></div>
+
+            <div class="container">
+                
+                
+                    <nav class="navbar">
+                        <h1 class="brand">
+                            
+                        </h1>
+                        <ul>
+                            <li><a href="#particles-js">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#technical">Participate</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+            </div>
+
+            
+            
+
+            
+
+
+            <div class="btext">
+                <h1>Ransomware Detector</h1>
+                <p>Utilising Machine Learning To Protect Our Most Important Assets</p>
+                <a href="#about" class="btn">Learn More</a>
+                <a href="https://vimeo.com/424805714" class="btn">Watch The Demo Video</a>
+            </div>
+
+       
+
+        <section id="about">
+            
+            <header class="bg-image"></header>
+            
+                
+
+                <!-- The Timeline -->
+
+                <ul class="timeline">
+
+	            <!-- Item 1 -->
+	            <li>
+	            	<div class="direction-r fade">
+	            		<div class="flag-wrapper">
+	            			<span class="flag">1. Gather Data</span>
+	            		</div>
+	            		<div class="desc">By Using Wireshark and TShark, The Team are Capturing Live Network Data While Also Using Publicly Available Network Captures</div>
+	            	</div>
+	            </li>
+            
+	            <!-- Item 2 -->
+	            <li>
+	            	<div class="direction-l fade">
+	            		<div class="flag-wrapper">
+	            			<span class="flag">2. Convert Data</span>
+	            			
+	            		</div>
+	            		<div class="desc">Once Data Has Been captured, The Team Convert The Captured Packets To CSV, Which Can then Be Read By The Machine Learning Environment, Weka</div>
+	            	</div>
+	            </li>
+            
+	            <!-- Item 3 -->
+	            <li>
+	            	<div class="direction-r fade">
+	            		<div class="flag-wrapper">
+	            			<span class="flag">3. Organise Data</span>
+	            			
+	            		</div>
+	            		<div class="desc">Once The Team Has All CSV Files Required, The Files Must Then Be Seperated Into "Ransomware" and "Non-Ransomware" Directories</div>
+	            	</div>
+                </li>
+                
+                <!-- Item 4 -->
+	            <li>
+	            	<div class="direction-l fade">
+	            		<div class="flag-wrapper">
+	            			<span class="flag">4. Train The Model</span>
+	            			
+	            		</div>
+	            		<div class="desc">We Now Train The Machine Learning Model By 'Feeding' The Model Our Data</div>
+	            	</div>
+                </li>
+                
+                <!-- Item 5 -->
+	            <li>
+	            	<div class="direction-r fade">
+	            		<div class="flag-wrapper">
+	            			<span class="flag">5. Test The Model</span>
+	            			
+	            		</div>
+	            		<div class="desc">Once We Have Trained The Model To Classify Data As Ransomware or Safe, We Now Test The Model With Unknown Data</div>
+	            	</div>
+                </li>
+
+  
+                </ul>
+
+                
+                <iframe src="https://player.vimeo.com/video/424805714" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            
+        </section>
+
+        <section id="technical">
+            <h1>Join Us In The Fight</h1>
+            <div class="contact-section">
+                <div class="inner-width">
+                    
+                    <input type="text" class="name" placeholder="Your Name">
+                    <input type="text" class="email" placeholder="Your Email">
+                    <select id="type" name="type">
+                        <option value="ransomware">Ransomware CSV</option>
+                        <option value="normal">Normal CSV</option>
+                    </select>
+                    <textarea rows="1" placeholder="Link To Data..." class="message"></textarea>
+                    <button>Submit Your Data</button>
+                </div>
+            </div>
+            
+                
+
+            
+        </section>
+
+        <section id="contact">
+            
+            
+
+            <div class="contact-section">
+                <div class="inner-width">
+                    <h1>Contact Developers</h1>
+                    <input type="text" class="name" placeholder="Your Name">
+                    <input type="text" class="email" placeholder="Your Email">
+                    <textarea rows="1" placeholder="Message..." class="message"></textarea>
+                    <button>Contact Us</button>
+                </div>
+            </div>
+           
+
+
+
+
+        </section>
+        
+        
+        <script src="nav.js"></script>
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+
+        
+
+
+        <script>
+            $(window).on("load",function() {
+                 $(window).scroll(function() {
+                   var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+                   $(".fade").each(function() {
+                     /* Check the location of each desired element */
+                     var objectBottom = $(this).offset().top + $(this).outerHeight();
+
+                     /* If the element is completely within bounds of the window, fade it in */
+                     if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                       if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+                     } else { //object goes out of view (scrolling up)
+                       if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+                     }
+                   });
+                 }).scroll(); //invoke scroll-handler on page-load
+            });
+
+
+
+        </script>
+    </body>
+</html>
